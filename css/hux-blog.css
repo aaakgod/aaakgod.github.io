@@ -1651,3 +1651,115 @@ img::-moz-selection {
   overflow: auto;
   -webkit-overflow-scrolling: touch;
 }
+
+
+/*20190115添加*/
+.post-style{
+
+	@media screen and (max-width:600px){
+		text-indent: 0px;
+		text-align: left;
+		line-height: 24px;
+	}
+
+	text-indent: 32px;
+	line-height: 28px;
+	font-size: 16px;
+
+	> p {
+		margin: 0px 0px;
+		@media screen and (max-width:600px){
+			margin: 10px 0px;
+		}
+	}
+
+	> h1 {
+		text-indent: 0px;
+		font-weight: 540;
+		font-size: 24px;
+		margin: 20px 0px;
+
+		@media screen and (max-width:600px){
+			font-size: 135%;
+		}
+	}
+
+	> h2 {
+		text-indent: 0px;
+		font-weight: 540;
+		font-size: 20px;
+		margin: 20px 0px;
+
+		@media screen and (max-width:600px){
+			font-size: 115%;
+		}
+	}
+
+	> ul {
+		list-style-type: disc;
+		list-style-position: inside;
+		margin:8px 32px;
+		font-size: 14px;
+		text-indent: -20px;
+		padding-left: 20px;
+
+		@media screen and (max-width:600px){
+			margin: 10px 0px;
+			text-indent: -5.5%;
+			padding-left: 5.5%;
+		}
+
+	}
+
+
+	text-align: justify;
+
+	.post-text-center{
+
+		@media screen and (max-width:600px){
+		  padding: 0px 0px;
+		}
+
+		text-indent: 0px;
+		margin: 12px 0px;
+		padding: 0px 32px;
+		text-align: center;
+		font-size: 14px;
+	}
+
+	.post-text-tablename{
+		text-indent: 0px;
+		margin: 8px 0px;
+		text-align: center;
+		font-size: 14px;
+	}
+
+	.post-text-noindent{
+		text-indent: 0px;
+	}
+
+	.post-text-formula{
+		margin: 0px 0px;
+	}
+
+	> blockquote{
+		margin: 10px 32px;
+		font-size: 16px;
+		font-style: normal;
+		font-family: 'Times New Roman', Arial, KaiTi, STKaiTi,	SimSun, 'Microsoft YaHei';
+		text-indent: 0px;
+
+		@media screen and (max-width:600px){
+			margin: 12px 0px;
+		}
+	}
+
+	.blockquote-code{
+		text-indent: 0px;
+	}
+
+}
+
+
+
+

@@ -1,5 +1,7 @@
 {
     "editor.fontSize": 18,
     "editor.fontFamily": "'Monaco'",
+    "markdown.preview.fontFamily": "Monaco,-apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', 'HelveticaNeue-Light', 'Ubuntu', 'Droid Sans', sans-serif",
+    "markdown.preview.fontSize": 18,
 
 }

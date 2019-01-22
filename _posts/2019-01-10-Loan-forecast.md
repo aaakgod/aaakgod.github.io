@@ -128,7 +128,13 @@ a
 b
 c
 
+$a \in b$  
 d
+e  
+f   g
+h  
+i	
+j
 
 
 

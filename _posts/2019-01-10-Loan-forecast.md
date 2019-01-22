@@ -124,6 +124,9 @@ Now, Let’s look at the histogram and boxplot of LoanAmount using the following
 Again, there are some extreme values. Clearly, both ApplicantIncome and LoanAmount require some amount of data munging. LoanAmount has missing and well as extreme values values, while ApplicantIncome has a few extreme values, which demand deeper understanding. We will take this up in coming sections.
 
 $x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}$
+$x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}$
+$x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}$
+$x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}$
 
 
 

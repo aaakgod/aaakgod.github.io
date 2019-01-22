@@ -17,10 +17,10 @@ Tutorial: https://www.analyticsvidhya.com/blog/2016/01/complete-tutorial-learn-d
 
 ## 1.2 Problem Statement
 
-### About Company
+### 1.2.1 About Company
 Dream Housing Finance company deals in all home loans. They have presence across all urban, semi urban and rural areas. Customer first apply for home loan after that company validates the customer eligibility for loan.
 
-### Problem
+### 1.2.2 Problem
 Company wants to automate the loan eligibility process (real time) based on customer detail provided while filling online application form. These details are Gender, Marital Status, Education, Number of Dependents, Income, Loan Amount, Credit History and others. To automate this process, they have given a problem to identify the customers segments, those are eligible for loan amount so that they can specifically target these customers. Here they have provided a partial data set.
 
 ## 1.3 Data
@@ -121,8 +121,15 @@ Now, Let’s look at the histogram and boxplot of LoanAmount using the following
 	plt.show()
 ```
 ![07.png](/picturesWork/07.png)
-Again, there are some extreme values.  
+Again, there are some extreme values.
 Clearly, both ApplicantIncome and LoanAmount require some amount of data munging. LoanAmount has missing and well as extreme values values, while ApplicantIncome has a few extreme values, which demand deeper understanding. We will take this up in coming sections.
+
+
+
+
+
+
+
 
 
 

@@ -123,19 +123,11 @@ Now, Let’s look at the histogram and boxplot of LoanAmount using the following
 ![07.png](/picturesWork/07.png)
 Again, there are some extreme values.  
 Clearly, both ApplicantIncome and LoanAmount require some amount of data munging. LoanAmount has missing and well as extreme values values, while ApplicantIncome has a few extreme values, which demand deeper understanding. We will take this up in coming sections.  
-1+ $a \in b$
-a  
-b
-c
 
-$a \in b$  
-d
-e  
-f   g
-h  
-i	
-j
+### 2.2.3 Categorical variable analysis
 
+Now that we understand distributions for ApplicantIncome and LoanIncome, let us understand categorical variables in more details. 
+  
 
 
 

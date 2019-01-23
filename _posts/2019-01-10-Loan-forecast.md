@@ -127,6 +127,7 @@ Clearly, both ApplicantIncome and LoanAmount require some amount of data munging
 ### 2.2.3 Categorical variable analysis
 
 Now that we understand distributions for ApplicantIncome and LoanIncome, let us understand categorical variables in more details. 
+Now that we understand distributions for ApplicantIncome and LoanIncome, let us understand categorical variables in more details. 
   
 
 

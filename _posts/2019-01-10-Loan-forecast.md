@@ -11,6 +11,7 @@ tags:
 # 一.Put forward Questions
 
 ## 1.1 Background
+
 Data: https://datahack.analyticsvidhya.com/contest/practice-problem-loan-prediction-iii/
 
 Tutorial: https://www.analyticsvidhya.com/blog/2016/01/complete-tutorial-learn-data-science-python-scratch-2/
@@ -127,8 +128,8 @@ Clearly, both ApplicantIncome and LoanAmount require some amount of data munging
 ### 2.2.3 Categorical variable analysis
 
 Now that we understand distributions for ApplicantIncome and LoanIncome, let us understand categorical variables in more details. 
+
 Now that we understand distributions for ApplicantIncome and LoanIncome, let us understand categorical variables in more details. 
-  
 
 
 

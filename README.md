@@ -1,6 +1,6 @@
-# Hux Blog
+# Kgod Blog
 
-### [View Live Hux Blog &rarr;](https://huangxuan.me)
+### [View Live Hux Blog &rarr;](https://aaakgold.github.io)
 
 ![](http://huangxuan.me/img/blog-desktop.jpg)
 

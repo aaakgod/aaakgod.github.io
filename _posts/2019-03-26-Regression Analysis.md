@@ -7,6 +7,23 @@ header-style: text
 tags: 
   - regression analysis 
 ---
+目录
+<!-- levels="2,3" autolink="true" style="orderd -->
+<!-- MarkdownTOC "-->
+
+- 第二章 随机向量
+  - 2.1 均值向量与协方差阵
+  - 2.2 随机向量的二次型
+  - 2.3 正态随机变量的性质
+- 第三章 回归参数的最小二乘估计
+  - 3.1 预备知识
+  - 3.2 最小二乘估计
+  - 3.3 线性模型的中心化和标准化
+  - 3.4 最下二乘估计的性质
+    - 3.4.1 一般线性回归模型
+
+<!-- /MarkdownTOC -->
+
 # 第二章 随机向量
 ### 2.1 均值向量与协方差阵
 **性质:**
@@ -44,7 +61,7 @@ tags:
 
 
 # 第三章 回归参数的最小二乘估计
-### 1.预备知识
+### 3.1 预备知识
 1. 定义: 
     * 设$\xi$是关于$X=(x_1,\cdots,x_n)'$的函数,定义$\dfrac{\partial\xi}{\partial X}=\left(\dfrac{\partial\xi}{\partial x_1},\cdots,\dfrac{\partial\xi}{\partial x_n}\right)'$
     * 设$X=(x_1,\cdots,x_n)'$个分量是关于$\xi$的函数,定义$\dfrac{\partial X}{\partial\xi}=\left(\dfrac{\partial x_1}{\partial\xi},\cdots,\dfrac{\partial x_n}{\partial\xi}\right)'$ 
@@ -54,18 +71,39 @@ tags:
     * 设$X$是$n \times 1$维向量,$A$是$n \times n$常数矩阵(不要求$A$对称),则$\dfrac{\partial(X'AX)}{\partial X}=(A+A')X$
     * 特别地,当$A$对称时,$$\dfrac{\partial(X'AX)}{\partial X}=2AX$$.
 
-### 2.最小二乘估计
+### 3.2 最小二乘估计
 **多元线性回归模型:**$Y=X\beta+e$,假设$E(e)=0,Cov(e)=\sigma^2 I_n$.  
 **结论:**$\hat{\beta}=(X'X)^{-1}X'Y$.  
 **经验回归方程:**$\hat{y}= \hat{\beta_0}+\hat{\beta_1} x_1+\cdots+\hat{\beta_{p-1}} x_{p-1}$.  
 **推导:**$||Y-X \beta||^2=(Y-X\beta)'(Y-X\beta)=Y'Y-2Y'X\beta+\beta'X'X\beta$,对$\beta$求偏导,令为0.  
 
-### 3.线性模型的中心化和标准化
+### 3.3 线性模型的中心化和标准化
 **矩阵形式:**$Y=\alpha 1_n + X_c \beta +e=(1_n:X_c)$
 $$\begin{pmatrix}
   \alpha \\ 
   \beta 
-  \end{pmatrix}$$
+  \end{pmatrix}$$ +$e$  
+  其最小二乘估计是 $$\left\{\begin{matrix}
+\hat{\alpha} = y & \\ 
+\hat{\beta} = (X_{c}^{'}X_c)^{-1} X_{c}^{'} Y & 
+\end{matrix}\right.$$
+
+### 3.4 最下二乘估计的性质
+#### 3.4.1 一般线性回归模型
+**Th3.2.1** 最小二乘估计$\hat{\beta} = (X'X)^{-1}X'Y$的性质:  
+1. $E(\hat{\beta}) = \beta$  
+2. $Cov(\hat{\beta}) = \sigma^2 (X'X)^{-1}$  
+分析:$Y=X\beta+e$中 $Y$ 与 $e$ 是随机的,$X\beta$是非随机的,所以  
+$E(Y)=X\beta,CovY=Cov(e)=\sigma^2 I$  
+
+**定义:** 称$C'\hat{\beta}$为$C'\beta$的最小二乘估计,$C'\hat{\beta} = C'(X'X)^{-1}X'Y$  
+
+**推论3.2.1**  
+1. $E(C'\hat{\beta})=C'\beta$
+2. $Cov(C'\hat{\beta}) = \sigma^2C'(X'X)^{-1}C = Var(C'\hat{\beta})$  
+proof 2:$Cov(C'\hat{\beta}) = C'Cov(\hat{\beta})C = C'\sigma^2(X'X)^{-1}C$
+
+
 
 
 

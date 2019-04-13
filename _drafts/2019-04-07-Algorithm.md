@@ -7,4 +7,4 @@ header-style: text
 tags: 
   - Algorithm 
 ---
-# 1.
+# 1.2

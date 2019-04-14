@@ -135,3 +135,9 @@ page-mathjax: true
 #        href: "http://xieminis.me/"
 #    }
 #]
+
+#添加访问量
+leancloud:
+  enable: true
+  app_id: Mve2irCFSUjzeb1QMtjvLryJ-gzGzoHsz
+  app_key: 8n00uXYwSaOb77DyiwWp8bUB

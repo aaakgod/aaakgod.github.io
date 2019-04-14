@@ -252,6 +252,7 @@
   <script>AV.initialize("{{site.leancloud.app_id}}", "{{site.leancloud.app_key}}");</script>
   <script>
     //新增访问次数
+
     function addCount(Counter) {
       // 页面（博客文章）中的信息：leancloud_visitors
       // id为page.url， data-flag-title为page.title
@@ -307,7 +308,7 @@
         }
       });
     }
-    
+
     //仅根据url和title查出当前访问次数，不做+1操作
     function showCount(Counter) {
       var $visitors = $(".leancloud_visitors");

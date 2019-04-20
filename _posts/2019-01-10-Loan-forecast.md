@@ -65,7 +65,7 @@ Ubuntu18.04 , Python3 , Numpy ,  Matplotlib , Pandas ,Sklearn
 	print(df.head(10))
 	print(df.describe())
 ```
-![01.png](/picturesWork/01.png)
+![01.png](/picturesWork/loan-forecast/01.png)
 This should print 10 rows. Alternately, you can also look at more rows by printing the dataset.  
 Next, you can look at summary of numerical fields by using describe() function.  
 Here are a few inferences:
@@ -80,7 +80,7 @@ For the non-numerical values (e.g. Property_Area, Credit_History etc.), we can l
 	print(df['Property_Area'].value_counts())
 	print(df['Credit_History'].value_counts())
 ```
-![02.png](/picturesWork/02.png)
+![02.png](/picturesWork/loan-forecast/02.png)
 We can also look that about 84% applicants have a credit_history.The mean of Credit_History field is 0.84 (475/564) (Remember, Credit_History has value 1 for those who have a credit history and 0 otherwise) 
 
 ### 2.2.2 Distribution analysis
@@ -92,7 +92,7 @@ Lets start by plotting the histogram of ApplicantIncome using the following comm
 	print(df['ApplicantIncome'].hist(bins=50))
 	pli.show()
 ```
-![03.png](/picturesWork/03.png)
+![03.png](/picturesWork/loan-forecast/03.png)
 Here we observe that there are few extreme values.This is also the reason why 50 bins are required to depict the distribution clearly.   
 
 
@@ -101,13 +101,13 @@ Next, we look at box plot t ounderstand the distributions.Box plot for fare can 
 	print(df.boxplot(column='ApplicantIncome'))
 	plt.show()
 ```
-![04.png](/picturesWork/04.png)
+![04.png](/picturesWork/loan-forecast/04.png)
 This confirms the presence of a lot of outliers/extreme values. This can be attributed to the income disparity in the society. Part of this can be driven by the fact that we are looking at people with different education levels. Let us segregate them by Education:
 ```python
 	df.boxplot(column = 'ApplicantIncome',by ='Education')
 	plt.show()
 ```
-![05.png](/picturesWork/05.png)
+![05.png](/picturesWork/loan-forecast/05.png)
 We can see that there is no substantial different between the mean income of graduate and non-graduates. But there are a higher number of graduates with very high incomes, which are appearing to be the outliers.
 
 Now, Let’s look at the histogram and boxplot of LoanAmount using the following command:
@@ -115,13 +115,13 @@ Now, Let’s look at the histogram and boxplot of LoanAmount using the following
 	df['LoanAmount'].hist(bins=50)
 	plt.show()
 ```
-![06.png](/picturesWork/06.png)
+![06.png](/picturesWork/loan-forecast/06.png)
 
 ```python
 	df.boxplot(column='LoanAmount')
 	plt.show()
 ```
-![07.png](/picturesWork/07.png)
+![07.png](/picturesWork/loan-forecast/07.png)
 Again, there are some extreme values.  
 Clearly, both ApplicantIncome and LoanAmount require some amount of data munging. LoanAmount has missing and well as extreme values values, while ApplicantIncome has a few extreme values, which demand deeper understanding. We will take this up in coming sections.  
 

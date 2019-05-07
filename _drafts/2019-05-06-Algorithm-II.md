@@ -120,7 +120,7 @@ def select_sort(alist):
 
 
 if __name__ == "__main__":
-    li = [9 , 16, 17, 15, 11,     26    ]
+    li = [9 , 16, 17, 15, 11, 26 ]
 
     print(li)
     select_sort(li)

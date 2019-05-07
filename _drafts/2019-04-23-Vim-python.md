@@ -1,12 +1,14 @@
 ---
 layout: post
-title: "Vim-python"
-subtitle: 'Vim-python'
+title: "Vim配置及快捷键大全"
+subtitle: 'Vim'
 author: "Kgod"
 header-style: text
 tags:
-  - Vim-python
+  - Vim
 ---
 # Vim-python
+*博主日常主要使用python,所以是基于python下的一些配置,其他酌情更改*
+
 
 插件 快捷键

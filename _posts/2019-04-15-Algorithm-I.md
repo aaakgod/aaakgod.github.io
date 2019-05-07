@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "The art of war-python_1"
-subtitle: 'The art of war-python_1'
+title: "The art of war-python-I"
+subtitle: 'The art of war-python-I'
 author: "Kgod"
 header-style: text
 tags:

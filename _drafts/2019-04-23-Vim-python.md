@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Vim配置及快捷键大全"
-subtitle: 'Vim'
+title: "Vim"
+subtitle: 'Vim配置及快捷键大全'
 author: "Kgod"
 header-style: text
 tags:

@@ -13,7 +13,7 @@ tags:
 [Python 详细视频](https://pan.baidu.com/s/1hOcl3GT3Ko4EttcPI95QLg)  提取码: 2esp  
 [PanDownload](http://pandownload.com/)
 
-[python1](http://c.biancheng.net/view/4427.html)
+[python1](http://c.biancheng.net/view/4427.html)  
 [python2](https://blog.csdn.net/github_38614120/article/details/79163534)
 
 ## if else
@@ -267,6 +267,15 @@ a.reverse() #将list逆置
 print(a)
 a.sort() #将list按特定顺序默认为从小到大， 参数reverse=Ture 可改为倒序 即由大到小 a.sort(reverse=True)
 print(a)
+
+#sorted()
+#sort 是应用在 list 上的方法，sorted 可以对所有可迭代的对象进行排序操作。
+#list 的 sort 方法返回的是对已经存在的列表进行操作，无返回值，而内建函数 ;sorted 方法返回的是一个新的 list，而不是在原来的基础上进行的操作。
+a = [5,7,6,3,4,1,2]
+b = sorted(a)       # 保留原列表
+#a=[5, 7, 6, 3, 4, 1, 2]
+#b=[1, 2, 3, 4, 5, 6, 7]
+
 ```
 ```python
 #6. copy() 浅复制

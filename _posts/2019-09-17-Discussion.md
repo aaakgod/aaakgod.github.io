@@ -13,6 +13,125 @@ tags:
 [Python 详细视频](https://pan.baidu.com/s/1hOcl3GT3Ko4EttcPI95QLg)  提取码: 2esp  
 [PanDownload](http://pandownload.com/)
 
+[python1](http://c.biancheng.net/view/4427.html)
+[python2](https://blog.csdn.net/github_38614120/article/details/79163534)
+
+## if else
+```python
+gender = input("请输入你的性别：") #获取性别
+#判断性别
+if gender=="男": #input输入的全是str
+    print("高富帅")
+elif gender=="女":
+    print("白富美")
+else:
+    print("你很666")
+#==================================================================================================================
+score_s = input("请输入你的成绩")
+score =int(score_s)
+if score>=90 and score<=100:
+    print("本次考试等级为A")
+elif score>=80 and score<90:
+    print("本次考试等级为B")
+elif score>=70 and score<80:
+    print("本次考试等级为C")
+elif score>=60 and score<70:
+    print("本次考试等级为D")
+elif score>=0 and score<60:
+    print("本次考试等级为E")
+#==================================================================================================================
+import random
+player = input("请输入：剪刀（0） 石头（1） 布（2）：")
+player = int(player)
+computer = random.randint(0,2)
+if((player == 0) and (computer == 2)) or ((player == 1) and (computer == 0)) or ((player ==2) and (computer == 1)):
+    print("获胜，哈哈，你太厉害了！")
+elif player == computer:
+    print("平局，要不要再来一局")
+else:
+    print("输了，不要走，洗洗手在接着来，决战到天明")
+```
+
+## while
+```python
+i = 0
+while i<5:
+    print("当前是第%d次循环"%(i+1))
+    print("i=%d"%i)
+    i+=1
+#================================================================
+i =0
+sum = 0
+while i<=100:
+    sum = sum + i 
+    i +=1
+print("1到100的和是：%d"%sum) 
+#================================================================
+i = 0
+sum = 0
+while i<= 100:
+    if i%2 == 0: #判断是否是偶数
+        sum = sum +i
+    i+=1
+print("1到100的偶数和是%d"%sum) 
+#================================================================
+i = 1
+while i<=5:
+    j = 1
+    while j<=i:
+        print("* ",end='')
+        j+=1
+
+    print("\n")
+    i+=1
+#================================================================
+i = 1
+while i<=9:
+    j=1
+    while j<=i:
+        print("%d*%d=%d "%(j,i,i*j),end='')
+        j+=1
+    print("\n")
+    i+=1    
+```
+
+## for 
+```python
+name = 'dongGe'
+for x in name:
+    print(x)
+else:
+    print("没有数据")
+#================================================================
+for x in name:
+    print("-----")
+    if x == 'g':
+        break
+    print(x)
+#================================================================
+for x in name:
+    print("-----")
+    if x == 'g':
+        continue
+    print(x)
+#================================================================
+i = 0
+while i<10:
+    i+=1
+    print("-----")
+    if i == 5:
+        break #break的作用 ： 用来结束整个循环 
+    print(i)
+#================================================================
+i = 0 
+while i<10:
+    i+=1
+    print("-----")
+    if i==5:
+        continue #continue的作用  用来结束本次循环，紧接着执行下一次的循环
+    print(i)
+```
+
 ## List
 **列表是包含若干元素的有序连续内存空间**  
 Python常用的序列结构：列表、元组、字典、字符串、集合等  

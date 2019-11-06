@@ -16,6 +16,8 @@ tags:
 [python1](http://c.biancheng.net/view/4427.html)  
 [python2](https://blog.csdn.net/github_38614120/article/details/79163534)
 
+[林轩田机器学习基石](https://pan.baidu.com/s/1kpw83IZQ8botUah3bwjmOg) 提取码: 2333
+
 ## if else
 ```python
 gender = input("请输入你的性别：") #获取性别

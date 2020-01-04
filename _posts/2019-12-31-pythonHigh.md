@@ -15,19 +15,19 @@ tags:
     - C.拷贝的其他方式
 - 2.私有化
 - 3.属性property
-    - 1. 私有属性添加getter和setter⽅法
-    - 2. 使⽤property升级getter和setter⽅法
-    - 3. 使⽤property取代getter和setter⽅法
+    - A. 私有属性添加getter和setter⽅法
+    - B. 使⽤property升级getter和setter⽅法
+    - C. 使⽤property取代getter和setter⽅法
 - 4.生成器
-    - 1. 什么是⽣成器
-    - 2. 创建⽣成器⽅法1
-    - 3.创建⽣成器⽅法2 **yield**
-    - 4.send
-    - 5.多任务\(看上去同时执行\)
+    - A. 什么是⽣成器
+    - B. 创建⽣成器⽅法1
+    - C.创建⽣成器⽅法2 **yield**
+    - D.send
+    - E.多任务\(看上去同时执行\)
 - 5.迭代器
-    - A. 可迭代对象
+    - A. 可迭代对象 Iterable
     - B. 判断是否可以迭代
-    - C.迭代器
+    - C.迭代器  Iterator
     - D.iter\(\)函数
     - 总结
 - 6.闭包
@@ -45,6 +45,7 @@ tags:
     - H.使用装饰器对有返回值的函数进行装饰
     - I.使用通用的装饰器完成对函数进行装饰
     - J.有参数的装饰器
+- 8.
 
 <!-- /MarkdownTOC -->
 
@@ -99,7 +100,7 @@ print(t.getNum())
 
 
 # 3.属性property
-### 1. 私有属性添加getter和setter⽅法
+### A. 私有属性添加getter和setter⽅法
 ```python
 class Money(object):
     def __init__(self):
@@ -112,7 +113,7 @@ class Money(object):
         else:
             print("error:不是整型数字")
 ```
-### 2. 使⽤property升级getter和setter⽅法
+### B. 使⽤property升级getter和setter⽅法
 ```python
 class Money(object):
     def __init__(self):
@@ -128,7 +129,7 @@ class Money(object):
 ```
 <img src="/picturesWork/pythonHigh/007.png">
 
-### 3. 使⽤property取代getter和setter⽅法
+### C. 使⽤property取代getter和setter⽅法
 @property 成为属性函数，可以对属性赋值时做必要的检查，并保证代码的清晰短⼩，主要有2个作⽤:
 - 将⽅法转换为只读
 - 重新实现⼀个属性的设置和读取⽅法,可做边界判定
@@ -210,13 +211,13 @@ print(t.num) #相当于调用了 t.getNum()
 ```
 
 # 4.生成器
-### 1. 什么是⽣成器
+### A. 什么是⽣成器
 通过列表⽣成式，我们可以直接创建⼀个列表。但是，受到内存限制，列表容量肯定是有限的。⽽且，创建⼀个包含100万个元素的列表，不仅占⽤很⼤的存储空间，如果我们仅仅需要访问前⾯⼏个元素，那后⾯绝⼤多数元素占⽤的空间都⽩⽩浪费了。所以，如果列表元素可以按照某种算法推算出来，那我们是否可以在循环的过程中不断推算出后续的元素呢？这样就不必创建完整的list，从⽽节省⼤量的空间。在Python中，这种⼀边循环⼀边计算的机制，称为⽣成器：generator。
 
-### 2. 创建⽣成器⽅法1
+### B. 创建⽣成器⽅法1
 要创建⼀个⽣成器，有很多种⽅法。第⼀种⽅法很简单，只要把⼀个列表⽣成式的 [ ] 改成 ( )
 
-### 3.创建⽣成器⽅法2 **yield**
+### C.创建⽣成器⽅法2 **yield**
 ```python
 def Fib():
     print("------start----")
@@ -248,7 +249,7 @@ for num in a:
     print(num)
 ```
 <img src="/picturesWork/pythonHigh/009.png">
-
+<!-- =========================================================================================== -->
 
 ```python
 def Fib():
@@ -270,7 +271,6 @@ a = Fib()
 
 ret = next(a)    #让a这个生成器对象开始执行,如果是第一次执行,那么就从creatNum的开始部分执行
                  #如果是之前已经执行过了,那么就从上一次停止的位置开始执行
-
 ret = next(a)
 ret = next(a)
 ret = next(a)
@@ -280,7 +280,7 @@ ret = next(a)
 ret = next(a)
 ```
 <img src="/picturesWork/pythonHigh/011.png">
-
+<!-- ====================================================================================== -->
 
 ```python
 def Fib():
@@ -309,7 +309,7 @@ print(ret)
 # for 循环不会报错
 ```
 
-### 4.send
+### D.send
 执⾏到yield时，gen函数作⽤暂时保存，返回i的值;temp接收下次 c.send("python")，send发送过来的值，c.next()等价c.send(None)
 ```python
 def gen():
@@ -321,10 +321,7 @@ def gen():
 ```
 <img src="/picturesWork/pythonHigh/010.png">
 
-
-
-
-### 5.多任务(看上去同时执行)
+### E.多任务(看上去同时执行)
 ```python
 def test1():
     while True:
@@ -345,9 +342,8 @@ while True:
 ```
 
 
-
 # 5.迭代器
-### A. 可迭代对象
+### A. 可迭代对象 Iterable
 以直接作⽤于 for 循环的数据类型有以下⼏种：
 - ⼀类是集合数据类型，如 list 、 tuple 、 dict 、 set 、 str 等；
 - ⼀类是 generator ，包括⽣成器和带 yield 的generator function。这些可以直接作⽤于 for 循环的对象统称为可迭代对象： Iterable 。
@@ -369,8 +365,9 @@ isinstance(100, Iterable)
 ```
 *⽣成器不但可以作⽤于 for 循环，还可以被 next() 函数不断调⽤并返回下⼀个值，直到最后抛出 StopIteration 错误表示⽆法继续返回下⼀个值了*
 
-### C.迭代器
-可以被next()函数调⽤并不断返回下⼀个值的对象称为迭代器：Iterator。  
+### C.迭代器  Iterator
+**可以被next()函数调⽤并不断返回下⼀个值的对象称为迭代器：Iterator。**  
+*鱼可以游泳 人能游泳 但是人不是鱼创建出来的*  
 可以使⽤ isinstance() 判断⼀个对象是否是 Iterator 对象：
 ```python
 from collections import Iterator
@@ -747,10 +744,13 @@ def test2():
 
 test()
 test2()
-
 ```
 
+# 8.
 
+
+
+=======================The End========================
 
 
 

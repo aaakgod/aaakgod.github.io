@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Python List"
+title: "Python List And Machine Learning"
 subtitle: 'list'
 author: "Kgod"
 header-style: text
